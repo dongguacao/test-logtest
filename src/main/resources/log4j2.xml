@@ -15,13 +15,14 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="cn.lidong" level="trace" additiv-ity="false">
+        <Logger name="cn.lidong2" level="trace" additiv-ity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="MyFile"/>
         </Logger>
         <Root level="info">
             <AppenderRef ref="Console"/>
         </Root>
+        4
     </Loggers>
 </Configuration>
 3
