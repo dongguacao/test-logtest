@@ -13,7 +13,6 @@
             </Filters>
         </File>
     </Appenders>
-
     <Loggers>
         <Logger name="cn.lidong" level="trace" additiv-ity="false">
             <AppenderRef ref="Console"/>
