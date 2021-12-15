@@ -5,7 +5,7 @@
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
-        <File name="MyFile1" fileName="D:/logs/app.log">
+        <File name="MyFile" fileName="D:/logs/app.log">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
             <Filters>
             <ThresholdFilter level="error" onMatch="DENY" onMismatch="NEUTRAL"/>
@@ -15,14 +15,13 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="cn.lidong2" level="trace" additiv-ity="false">
+        <Logger name="cn.lidong" level="trace" additiv-ity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="MyFile"/>
         </Logger>
         <Root level="info">
             <AppenderRef ref="Console"/>
         </Root>
-        4
+
     </Loggers>
 </Configuration>
-3
